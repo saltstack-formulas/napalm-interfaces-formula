@@ -1,0 +1,51 @@
+openconfig-interfaces:
+  interfaces:
+    interface:
+      xe-0/0/0:
+        config:
+          mtu: 9000
+          description: Interface1
+        subinterfaces:
+          subinterface:
+            0:
+              config:
+                description: Subinterface1
+              ipv4:
+                addresses:
+                  address:
+                    1.2.3.4:
+                      config:
+                        ip: 1.2.3.4
+                        prefix_length: 24
+            1:
+              config:
+                description: Subinterface2
+              ipv4:
+                addresses:
+                  address:
+                    1.2.3.4:
+                      config:
+                        ip: 1.2.3.4
+                        prefix_length: 24
+              ipv6:
+                addresses:
+                  address:
+                    '2001:db8::1':
+                      config:
+                        ip: '2001:db8::1'
+                        prefix_length: 64
+      xe-1/1/1:
+        config:
+          description: Interface2
+        subinterfaces:
+          subinterface:
+            0:
+              config:
+                description: Reserved
+              ipv4:
+                addresses:
+                  address:
+                    5.6.7.8:
+                      config:
+                        ip: 5.6.7.8
+                        prefix_length: 24
