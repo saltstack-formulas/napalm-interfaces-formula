@@ -1,0 +1,8 @@
+name: napalm-interfaces
+os: Junos, IOS-XR, EOS, NX-OS
+os_family: RedHat, Debian, Suse, Gentoo
+version: 201709
+release: 1
+minimum_version: 2017.7.0
+summary: Formula for interfaces configuration management
+description: Formula for interfaces configuration management of network devices, following the OpenConfig YANG model: http://ops.openconfig.net/branches/master/openconfig-interfaces.html
